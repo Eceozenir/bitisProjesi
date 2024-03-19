@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: "Inter";
+    font-optical-sizing: auto;
+}
+
+.container{
+    max-width: 1110px;
+    padding-inline: 16px;
+    margin-inline: auto;
+}
+
+.mainPhoto{
+    width: 100%;
+    object-fit: cover;
+}
+
+.header{
+    padding-block: 89px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.liste{
+    display: flex;
+    gap: 40px;
+}
+
+
+.mainTitle{
+    font-weight: 800;
+    font-size: 56px;
+    color: #00001A;
+   
+}
+
+.mainParagraph{
+    font-weight: 400px;
+    font-size: 15px;
+    color: #5E607A;
+    padding-block: 15px;
+}
+
+.mainTexts{
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.readMoreBtn{
+    width: 185px;
+    padding: 20px;
+    background-color: #F15D51;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFDFA;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 25px;
+    
+}
+
+.readMoreBtn:hover{
+    background-color: #00001A;
+    transition: 0.6s;
+}
+
+
+.bottomPart{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.bottomNumbers{
+    font-weight: 700;
+    font-size: 32px;
+    color: #C5C6CE;
+}
+
+.bottomTitle{
+    font-weight: 800;
+    font-size: 18px;
+    color: #00001A;
+    cursor: pointer;
+   
+}
+
+.bottomTitle:hover{
+    color: #F15D51;
+    transition: 0.3s;
+}
+
+.bottomParagraph{
+    font-weight: 400;
+    font-size: 15px;
+    
+}
+
+.bottomNews{
+    display: flex;
+    gap: 30px;
+    margin-top: 71px;
+} 
+
+.bottomImg{
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .bottomPart{
+    display: flex;
+} */
+
+.sidePartCard{
+    background-color: #00001A;
+    margin-top: 64px;
+}
+
+.cardNews{
+    padding-block: 40px;
+    padding-inline: 5px;
+} 
+
+.sideTitle{
+    font-size: 40px;
+    font-weight: 700px;
+    color: #E9AA52;
+    padding: 10px;
+}
+
+.sideHeaders{
+    color: #FFFDFA;
+    padding-top: 20px;
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sideHeaders:hover{
+    color: #E9AA52;
+    transition: 0.3s;
+}
+
+.sideParagraphs{
+    color: #C5C6CE;
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+.item{
+    color: #5E607A;
+    cursor: pointer;
+}
+
+.item:hover{
+    color: #F15D51;
+    transition: 0.2s;
+}
+
+.desktop-visible{
+    display: none;
+}
+
+.mobile-visible{
+    display: block;
+}
+
+@media (width >= 1110px){
+    .desktop-visible{
+        display: flex;
+    }
+
+    .mobile-visible{
+        display: none;
+    }
+
+    .sidePartCard{
+        margin-top: 0;
+    }
+
+    .mainTitle{
+        top: 512px;
+        left: 162px;
+        display: flex;
+    }
+    .mainTexts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .bottomPart{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .bottomParagraph{
+        padding-bottom: 129px;
+    }
+
+    .bottomTitle{
+        padding-block: 10px;
+    }
+
+    .mainAndSidePart{
+        display: flex;
+        align-items: start;
+
+    }
+
+    .mainPart{
+        padding-right: 30px;
+        /* align-items: center; */
+
+    }
+
+    .sidePartCard{
+        width: 80%;
+    }
+   
+
+}
